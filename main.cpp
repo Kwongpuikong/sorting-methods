@@ -36,7 +36,7 @@ void main(){
 
 	//quick-sort...
 	int a[] = {1,3,2,4,5,10,8,9,7,6};
-	
+	quick_sort(a,0,9);
 
 	for(int i=0;i<10;i++){
 	
