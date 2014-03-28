@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{38A324EB-FCF5-4A9C-BD84-377FC17C2690}</ProjectGuid>
+    <ProjectGuid>{B8245028-6843-4DC9-BBBE-5A900FF67844}</ProjectGuid>
     <RootNamespace>sorting</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -46,6 +46,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -62,6 +63,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bubble-sort.h" />
+    <ClInclude Include="insert-sort.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="merge-sort.h" />
+    <ClInclude Include="quick-sort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bubble-sort.cpp" />
+    <ClCompile Include="insert-sort.cpp" />
+    <ClCompile Include="list.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="merge-sort.cpp" />
+    <ClCompile Include="quick-sort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
