@@ -1,5 +1,8 @@
 #include "quick-sort.h"
 
+/*如同两个机器人在各自的区域找大于key的石头扔向对方。
+每人扔一次。
+*/
 int partition(int a[],int s,int e){
 
 	int i = s;
@@ -20,6 +23,10 @@ int partition(int a[],int s,int e){
 	return i;
 }
 
+/*分治思想：
+以key的位置分为前后两部分。
+继续让机器人扔石头。
+*/
 void quick_sort(int a[],int s,int e){
 
 	if(s<e){
